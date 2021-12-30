@@ -12,9 +12,9 @@ import javax.servlet.annotation.WebServlet;
 @WebServlet(urlPatterns = "/UpdateNote")
 public class UpdateNote extends HttpServlet {
    final static String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-   final static String URL = "jdbc:mysql://106.12.173.92/LinuxExam";
-   final static String USER = "root";
-   final static String PASS = "Wang123/@";
+   final static String URL = "jdbc:mysql://180.76.229.238/notepad";
+   final static String USER = "miaomiao";
+   final static String PASS = "1qaz@WSX";
    final static String SQL_UPDATE_NOTEPAD = "UPDATE t_notepad SET notepad_content= ? , notepad_time = ? WHERE id=?";
 
    public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
