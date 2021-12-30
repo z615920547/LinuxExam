@@ -15,9 +15,9 @@ import com.google.gson.reflect.TypeToken;
 @WebServlet(urlPatterns = "/GetNoteId")
 public class GetNoteId extends HttpServlet {
     static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
-   final static String URL = "jdbc:mysql://180.76.229.238/notepad";
-   final static String USER = "miaomiao";
-   final static String PASS = "1qaz@WSX";
+    static final String DB_URL = "jdbc:mysql://180.76.229.238/notepad";
+    static final String USER = "miaomiao";
+    static final String PASS = "1qaz@WSX";
     static final String SQL_QURERY_STUDENT_BY_ID = "SELECT id, notepad_content FROM t_notepad WHERE id=?";
     static final String REDIS_URL = "180.76.229.238";
 
